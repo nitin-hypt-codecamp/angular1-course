@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Controller As</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="MyApp">
+
+    <div ng-controller="ParentController1">
+      <div ng-controller="ChildController1">
+      </div>
+    </div>
+
+  <div ng-controller="ParentController2 as pc">
+    Parent Value: {{ pc.value }}
+    <div ng-controller="ChildController2 as cc">
+      Child Value: {{cc.value}}
+      Parent Value: {{pc.value}}
+    </div>
+  </div>
+
+  </body>
+</html>

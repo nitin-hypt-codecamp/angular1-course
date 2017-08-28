@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dependency  Injection in Angular and javascript</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js">
+
+    </script>
+  </head>
+  <body ng-app="MyModule">
+    <div ng-controller="MyController">
+      John says - {{ msg | uppercase }}
+      Amount is - {{ amount | currency : 'INR': 2}}
+    </div>
+  </body>
+</html>

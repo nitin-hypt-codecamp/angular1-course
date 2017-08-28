@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="NgRepeatApp">
+    <h1>NG Repeat Demo</h1>
+    <div ng-controller="RepeatController">
+      <ul>
+        <li ng-repeat="country in countries">{{ country }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
